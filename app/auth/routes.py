@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, session, redirect, url_for
 from app.db import User
 
-auth_bp = Blueprint('auth', __name__, template_folder='templates/auth')
+auth_bp = Blueprint('auth', __name__, template_folder='../../templates/auth')
 
 @auth_bp.route('/dashboard')
 def dashboard():

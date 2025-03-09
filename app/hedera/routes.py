@@ -3,7 +3,7 @@ from app.hedera.blockchain import get_counter, increment_counter
 from app.config import Config
 from app.db import db, User
 
-hedera_bp = Blueprint('hedera', __name__, template_folder='templates/hedera')
+hedera_bp = Blueprint('hedera', __name__, template_folder='../../templates/hedera')
 
 @hedera_bp.route('/connect')
 def connect():
