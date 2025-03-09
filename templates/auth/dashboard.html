@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+    <h2 class="text-center">User Dashboard</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Welcome, {{ account_id }}!</h5>
+            <p class="card-text">Email: {{ email or 'Not set' }}</p>
+            <a href="{{ url_for('hedera.counter') }}" class="btn btn-primary">Go to Counter</a>
+        </div>
+    </div>
+{% endblock %}

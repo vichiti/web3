@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Counter{% endblock %}
+{% block content %}
+    <h2 class="text-center">Counter Interaction</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Current Counter Value: {{ current_value }}</h5>
+            {% if tx_id %}
+                <p class="card-text">Transaction ID: {{ tx_id }}</p>
+            {% endif %}
+            <p class="card-text">Connected Account: {{ session.account_id }}</p>
+            <form method="POST">
+                <button type="submit" class="btn btn-success">Increment Counter</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Hedera Flask App</h1>
+        <p class="lead">A scalable app with Flask, Solidity, and HashConnect.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('hedera.connect') }}" role="button">Get Started</a>
+    </div>
+{% endblock %}
